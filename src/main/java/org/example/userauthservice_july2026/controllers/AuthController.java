@@ -62,11 +62,11 @@ public class AuthController {
         userDto.setId(user.getId());
         userDto.setName(user.getName());
         userDto.setEmail(user.getEmail());
-        List<String> roleValues = new ArrayList<>();
-        for (Role role : user.getRoles()) {
-            roleValues.add(role.getValue());
-        }
-        userDto.setRoles(roleValues);
+//        List<String> roleValues = new ArrayList<>();
+//        for (Role role : user.getRoles()) {
+//            roleValues.add(role.getValue());
+//        }
+//        userDto.setRoles(roleValues);
         return userDto;
     }
 }
